@@ -23,13 +23,13 @@ ___
 `xTuring` provides fast, efficient and simple fine-tuning of open-source LLMs, such as Mistral, LLaMA, GPT-J, and more.
 By providing an easy-to-use interface for fine-tuning LLMs to your own data and application, xTuring makes it
 simple to build, modify, and control LLMs. The entire process can be done inside your computer or in your
-private cloud, ensuring data privacy and security.
+private cloud, ensuring privacy and security.
 
 With `xTuring` you can,
 - Ingest data from different sources and preprocess them to a format LLMs can understand
 - Scale from single to multiple GPUs for faster fine-tuning
 - Leverage memory-efficient methods (i.e. INT4, LoRA fine-tuning) to reduce hardware costs by up to 90%
-- Explore different fine-tuning methods and benchmark them to find the best performing model
+- Explore different fine-tuning methods and benchmark them to find the best model
 - Evaluate fine-tuned models on well-defined metrics for in-depth analysis
 
 <br>
@@ -159,6 +159,8 @@ $ xturing chat -m "<path-to-model-folder>"
 
 ```
 
+<br>
+
 ## UI playground
 <img src=".github/ui-playground2.gif" width="80%" style="margin: 0 1%;"/>
 
@@ -265,6 +267,8 @@ The above mentioned are the base variants of the LLMs. Below are the templates t
 model = GenericLoraKbitModel('<model_path>')
 ```
 The `model_path` can be replaced with you local directory or any HuggingFace library model like `facebook/opt-1.3b`.
+
+<br>
 
 ## 📈 Roadmap
 - [x] Support for `LLaMA`, `GPT-J`, `GPT-2`, `OPT`, `Cerebras-GPT`, `Galactica` and `Bloom` models
